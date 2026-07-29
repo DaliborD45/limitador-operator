@@ -1,7 +1,7 @@
 ARG DATA_RACE=false
 
 # Build the manager binary
-FROM --platform=$BUILDPLATFORM mirror.gcr.io/library/golang:1.26 AS builder
+FROM --platform=$TARGETPLATFORM mirror.gcr.io/library/golang:1.26 AS builder
 
 WORKDIR /workspace
 # Copy the Go Modules manifests
